@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Chủ</title>
+    <link rel="icon" href="logoweb1.png" type="image/png">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="shortcut icon" type="image/x-icon" href="picture/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar">
+        <img src="picture/logo.png" alt="Logo" class="navbar-logo">
+        <div class="navbar-menu">
+            <a href="index.html">Trang Chủ 🏠</a>
+            <a href="booking.html" id="booking-link">Đặt Vé 🎫</a>
+            <a href="./support.html">Hỗ Trợ 📞</a>
+            <a href="login.html" id="login-link">Đăng Nhập 👤</a>
+            <a href="admin.html" id="admin-page-btn" style="display: none;">Trang Quản Trị</a>
+            <div id="user-info" class="ml-auto"></div>
+        </div>
+        <div class="navbar-toggle" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </div>
+    <br>
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 4</div>
+            <img src="picture/vietnamairline.jpg" style="width:100%">
+            <div class="text" style="color: black;">Vietnam Airlines</div>
+        </div>
+    
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 4</div>
+            <img src="picture/vietjet.jpg" style="width:100%">
+            <div class="text" style="color: black;">Vietjet Air</div>
+        </div>
+    
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 4</div>
+            <img src="picture/jetstar.jpg" style="width:100%">
+            <div class="text" style="color: black;">Jetstar Pacific</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 4</div>
+            <img src="picture/bamboo.jpg" style="width:100%">
+            <div class="text">Bamboo Airways</div>
+        </div>
+    
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+
+    <main>
+        <section class="section">
+            <h2>Chào mừng bạn đến với dịch vụ đặt vé máy bay trực tuyến!</h2>
+            <p>Chúng tôi cung cấp dịch vụ đặt vé máy bay tiện lợi và nhanh chóng.</p>
+        </section>
+        <section class="section offers">
+            
+            <div class="card">
+                <a href="./thirdtysell.html"><img src="./picture/30.jpg" alt="Offer 2"></a>
+                <div class="card-content">
+                    <h3>Ưu đãi đặc biệt</h3>
+                    <p>Giảm giá 30% cho các chuyến bay quốc tế.</p>
+                </div>
+           </div>
+
+            <div class="card">
+                <a href="./halfsell.html"><img src="./picture/50.jpg" alt="Offer 1"></a>
+                <div class="card-content">
+                    <h3>Ưu đãi đặc biệt</h3>
+                    <p>Giảm giá 50% cho các chuyến bay nội địa.</p>
+                </div>
+            </div>
+ 
+            <div class="card">
+                <a href="./hntothuydien.html"><img src="./picture/Thuy-Dien(1).jpg" alt="Route 0"></a>
+                <div class="card-content">
+                    <h3>Hà Nội - Thụy Điển</h3>
+                    <p>Giảm giá 20% cho chuyến du lịch</p>
+                </div>
+            </div>
+
+        </section>
+        <section class="section popular-routes">
+            <div class="card">
+                <a href="./hntodn.html"><img src="./picture/ve-may-bay-hanoi-di-danang-29072022-1.jpg" alt="Route 1"></a>
+                <div class="card-content">
+                    <h3>Hà Nội - Đà Nẵng</h3>
+                    <p>Chỉ từ 999,000 VND.</p>
+                </div>
+            </div>
+            <div class="card">
+                <a href="./hcmtopq.html"><img src="./picture/hcm den pq.jpg" alt="Route 2"></a>
+                <div class="card-content">
+                    <h3>Hồ Chí Minh - Phú Quốc</h3>
+                    <p>Chỉ từ 899,000 VND.</p>
+                </div>
+            </div>
+            
+            <div class="card">
+            <a href="./sgtomy.html"><img src="./picture/sg-my.jpg" alt="Route 3"></a>
+            <div class="card-content">
+                <h3>Sài Gòn - Mỹ</h3>
+                <p>Chỉ từ 1,999,000 VND.</p>
+            </div>
+            </div>
+
+        </section>
+
+
+        <section class="section popular-routes">
+            <div class="card">
+                <a href="./hntoqn.html"><img src="./picture/hn-qn.png" alt="Route 1"></a>
+                <div class="card-content">
+                    <h3>Hà Nội - Quảng Ninh</h3>
+                    <p>Chỉ từ 499,000 VND.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <a href="./vntotq.html"><img src="./picture/ve-may-bay-vietnam-di-trung-quoc-12062021.jpg" alt="Route 3"></a>
+                <div class="card-content">
+                    <h3>Việt Nam - Trung Quốc</h3>
+                    <p>Chỉ từ 899,000 VND.</p>
+                </div>
+                </div>
+            <div class="card">
+                <a href="./hntont.html"><img src="https://etrip4utravel.s3-ap-southeast-1.amazonaws.com/images/article/2023/07/d50f810d-a6ce-4c6d-a12f-10c5b7dac4bb.jpg" alt="Route 2"></a>
+                <div class="card-content">
+                    <h3>Hà Nội - Nha Trang</h3>
+                    <p>Chỉ từ 799,000 VND.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="column">
+            <h3 style="font-size: 25px; text-align: left;">UpWings</h3>
+            <p style="font-size: 16px; text-align: left;">Địa chỉ: Số 1 Phố Xốm - Phú Lãm - Hà Đông - Hà Nội<br>
+                Email: Upwing@gmail.com<br>
+                Điện thoại: 0336601730
+            </p>
+        </div>
+        <div class="column">
+          <p><img src="./picture/logo.png" width="150px" alt="Logo Footer"></p>
+        </div>
+    </footer>
+
+    <script src="js/index.js"></script>
+    <script src="js/user.js"></script>
+</body>
+</html>

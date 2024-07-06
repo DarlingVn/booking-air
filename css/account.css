@@ -1,0 +1,164 @@
+body {
+    font-family: "Roboto", sans-serif;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 20px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1573df;
+    padding: 10px 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.navbar-logo {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.navbar-menu {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-menu a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.navbar-menu a:hover {
+    background-color: #4491e9;
+    border-radius: 4px;
+}
+
+.navbar-toggle {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20px;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+    border-radius: 2px;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+}
+
+.ticket {
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+.delete-button {
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+.delete-button:hover {
+    background-color: #cc4c39;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 240px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #1573df;
+    color: #fff;
+    padding: 10px;
+}
+  
+.column {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.column img {
+    margin-left: 500px;
+}
+
+@keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar-menu {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: #4491e9;
+        padding: 10px;
+        border-radius: 4px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        flex-direction: column;
+    }
+    .navbar-menu.active {
+        display: flex;
+    }
+    .navbar-toggle {
+        display: flex;
+    }
+    .offers, .popular-routes {
+        flex-direction: column;
+    }
+    .card {
+        width: 100%;
+    }
+}
+* {box-sizing:border-box}

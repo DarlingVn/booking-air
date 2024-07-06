@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý vé máy bay</title>
+    <link rel="stylesheet" href="css/admin.css">
+    <link rel="icon" href="logoweb1.png" type="image/png">
+    <link rel="shortcut icon" type="image/x-icon" href="picture/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar">
+        <img src="picture/logo.png" alt="Logo" class="navbar-logo">
+        <div class="navbar-menu">
+            <a href="index.html">Trang Chủ 🏠</a>
+            <a href="booking.html" id="booking-link">Đặt Vé 🎫</a>
+            <a href="./support.html">Hỗ Trợ 📞</a>
+            <a href="login.html" id="login-link">Đăng Nhập 👤</a>
+            <a href="admin.html" id="admin-page-btn" style="display: none;">Trang Quản Trị</a>
+            <div id="user-info" class="ml-auto"></div>
+        </div>
+        <div class="navbar-toggle" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </div>
+   
+    <h1>Quản lý vé máy bay</h1>
+
+    <div class="form-container" id="form-container">
+        <h2>Thêm/Sửa vé máy bay</h2>
+        <form id="ticket-form">
+            <input type="hidden" id="ticket-id">
+            <div class="form-group">
+                <label for="from">Điểm xuất phát:</label>
+                <select id="from" required>
+                    <option value="Hà Nội (HAN)">Hà Nội (HAN)</option>
+                    <option value="Tp. Hồ Chí Minh (SGN)">Tp. Hồ Chí Minh (SGN)</option>
+                    <option value="Đà Nẵng (DAD)">Đà Nẵng (DAD)</option>
+                    <option value="Phú Quốc (PQC)">Phú Quốc (PQC)</option>
+                    <option value="Nha Trang (CXR)">Nha Trang (CXR)</option>
+                    <option value="Buôn Ma Thuột (BMV)">Buôn Ma Thuột (BMV)</option>
+                    <option value="Cà Mau (CAH)">Cà Mau (CAH)</option>
+                    <option value="Cần Thơ (VCA)">Cần Thơ (VCA)</option>
+                    <option value="Chu Lai (VCL)">Chu Lai (VCL)</option>
+                    <option value="Côn Đảo (VCS)">Côn Đảo (VCS)</option>
+                    <option value="Đà Lạt (DLI)">Đà Lạt (DLI)</option>
+                    <option value="Điện Biên (DIN)">Điện Biên (DIN)</option>
+                    <option value="Đồng Hới (VDH)">Đồng Hới (VDH)</option>
+                    <option value="Hải Phòng (HPH)">Hải Phòng (HPH)</option>
+                    <option value="Huế (HUI)">Huế (HUI)</option>
+                    <option value="Pleiku (PXU)">Pleiku (PXU)</option>
+                    <option value="Quy Nhơn (UIH)">Quy Nhơn (UIH)</option>
+                    <option value="Rạch Giá (VKG)">Rạch Giá (VKG)</option>
+                    <option value="Thanh Hóa (THD)">Thanh Hóa (THD)</option>
+                    <option value="Tuy Hòa (TBB)">Tuy Hòa (TBB)</option>
+                    <option value="Vân Đồn (VDO)">Vân Đồn (VDO)</option>
+                    <option value="Vinh (VII)">Vinh (VII)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="to">Điểm đến:</label>
+                <select id="to" required>
+                    <option value="Hà Nội (HAN)">Hà Nội (HAN)</option>
+                    <option value="Tp. Hồ Chí Minh (SGN)">Tp. Hồ Chí Minh (SGN)</option>
+                    <option value="Đà Nẵng (DAD)">Đà Nẵng (DAD)</option>
+                    <option value="Phú Quốc (PQC)">Phú Quốc (PQC)</option>
+                    <option value="Nha Trang (CXR)">Nha Trang (CXR)</option>
+                    <option value="Buôn Ma Thuột (BMV)">Buôn Ma Thuột (BMV)</option>
+                    <option value="Cà Mau (CAH)">Cà Mau (CAH)</option>
+                    <option value="Cần Thơ (VCA)">Cần Thơ (VCA)</option>
+                    <option value="Chu Lai (VCL)">Chu Lai (VCL)</option>
+                    <option value="Côn Đảo (VCS)">Côn Đảo (VCS)</option>
+                    <option value="Đà Lạt (DLI)">Đà Lạt (DLI)</option>
+                    <option value="Điện Biên (DIN)">Điện Biên (DIN)</option>
+                    <option value="Đồng Hới (VDH)">Đồng Hới (VDH)</option>
+                    <option value="Hải Phòng (HPH)">Hải Phòng (HPH)</option>
+                    <option value="Huế (HUI)">Huế (HUI)</option>
+                    <option value="Pleiku (PXU)">Pleiku (PXU)</option>
+                    <option value="Quy Nhơn (UIH)">Quy Nhơn (UIH)</option>
+                    <option value="Rạch Giá (VKG)">Rạch Giá (VKG)</option>
+                    <option value="Thanh Hóa (THD)">Thanh Hóa (THD)</option>
+                    <option value="Tuy Hòa (TBB)">Tuy Hòa (TBB)</option>
+                    <option value="Vân Đồn (VDO)">Vân Đồn (VDO)</option>
+                    <option value="Vinh (VII)">Vinh (VII)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="departure-date">Ngày khởi hành:</label>
+                <input type="date" id="departure-date" required>
+            </div>
+            <div class="form-group">
+                <label for="departure-time">Giờ khởi hành:</label>
+                <input type="time" id="departure-time" required>
+            </div>
+            <div class="form-group">
+                <label for="ticket-class">Loại vé:</label>
+                <select id="ticket-class" required>
+                    <option value="Phổ thông">Phổ thông</option>
+                    <option value="Thương gia">Thương gia</option>
+                    <option value="Hạng nhất">Hạng nhất</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="trip-type">Loại chuyến đi:</label>
+                <select id="trip-type" required>
+                    <option value="Một chiều">Một chiều</option>
+                    <option value="Khứ hồi">Khứ hồi</option>
+                </select>
+            </div>
+            <div class="form-group" id="return-date-group" style="display: none;">
+                <label for="return-date">Ngày về:</label>
+                <input type="date" id="return-date">
+            </div>
+            <div class="form-group">
+                <label for="airline">Hãng hàng không:</label>
+                <select id="airline" required>
+                    <option value="Vietnam Airlines">Vietnam Airlines</option>
+                    <option value="Vietjet Air">Vietjet Air</option>
+                    <option value="Jetstar Pacific">Jetstar Pacific</option>
+                    <option value="Bamboo Airways">Bamboo Airways</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="ticket-price">Giá vé:</label>
+                <input type="number" id="ticket-price" required>
+            </div>
+            <button type="submit">Lưu vé</button>
+        </form>
+    </div>
+
+    <div class="table-container">
+        <h2>Danh sách vé máy bay</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Điểm xuất phát</th>
+                    <th>Điểm đến</th>
+                    <th>Ngày khởi hành</th>
+                    <th>Giờ khởi hành</th>
+                    <th>Loại vé</th>
+                    <th>Loại chuyến đi</th>
+                    <th>Ngày về</th>
+                    <th>Hãng hàng không</th>
+                    <th>Giá vé</th>
+                    <th>Hành động</th>
+                </tr>
+            </thead>
+            <tbody id="ticket-list">
+            </tbody>
+        </table>
+    </div>
+
+    <footer class="footer">
+        <div class="column">
+            <h3 style="font-size: 25px; text-align: left;">UpWings</h3>
+            <p style="font-size: 16px; text-align: left;">Địa chỉ: Số 1 Phố Xốm - Phú Lãm - Hà Đông - Hà Nội<br>
+                Email: Upwing@gmail.com<br>
+                Điện thoại: 0336601730
+            </p>
+        </div>
+        <div class="column">
+          <p><img src="./picture/logo.png" width="150px" alt="Logo Footer"></p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/admin.js"></script>
+    <script src="js/user.js"></script>
+</body>
+</html>

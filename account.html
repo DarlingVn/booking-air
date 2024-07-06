@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tài khoản của tôi</title>
+    <link rel="icon" href="logoweb1.png" type="image/png">
+    <link rel="stylesheet" href="css/account.css">
+    <link rel="shortcut icon" type="image/x-icon" href="picture/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar">
+        <img src="picture/logo.png" alt="Logo" class="navbar-logo">
+        <div class="navbar-menu">
+            <a href="index.html">Trang Chủ 🏠</a>
+            <a href="booking.html" id="booking-link">Đặt Vé 🎫</a>
+            <a href="./support.html">Hỗ Trợ 📞</a>
+            <a href="login.html" id="login-link">Đăng Nhập 👤</a>
+            <a href="admin.html" id="admin-page-btn" style="display: none;">Trang Quản Trị</a>
+            <div id="user-info" class="ml-auto"></div>
+        </div>
+        <div class="navbar-toggle" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </div>
+    <h1>Vé đã đặt</h1>
+    <div id="tickets-container"></div>
+
+    <footer class="footer">
+        <div class="column">
+            <h3 style="font-size: 25px; text-align: left;">UpWings</h3>
+            <p style="font-size: 16px; text-align: left;">Địa chỉ: Số 1 Phố Xốm - Phú Lãm - Hà Đông - Hà Nội<br>
+                Email: Upwing@gmail.com<br>
+                Điện thoại: 0336601730
+            </p>
+        </div>
+        <div class="column">
+          <p><img src="./picture/logo.png" width="150px" alt="Logo Footer"></p>
+        </div>
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/user.js"></script>
+    <script src="js/account.js"></script>
+</body>
+</html>

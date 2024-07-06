@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giảm giá 50% cho các chuyến bay nội địa.</title>
+    <link rel="icon" href="logoweb1.png" type="image/png">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="shortcut icon" type="image/x-icon" href="picture/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <style>
+        main{
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <img src="picture/logo.png" alt="Logo" class="navbar-logo">
+        <div class="navbar-menu">
+            <a href="index.html">Trang Chủ 🏠</a>
+            <a href="booking.html" id="booking-link">Đặt Vé 🎫</a>
+            <a href="./support.html">Hỗ Trợ 📞</a>
+            <a href="login.html" id="login-link">Đăng Nhập 👤</a>
+            <a href="admin.html" id="admin-page-btn" style="display: none;">Trang Quản Trị</a>
+            <div id="user-info" class="ml-auto"></div>
+        </div>
+        <div class="navbar-toggle" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </div>
+    <br>
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 4</div>
+            <img src="picture/vietnamairline.jpg" style="width:100%">
+            <div class="text" style="color: black;">Vietnam Airlines</div>
+        </div>
+    
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 4</div>
+            <img src="picture/vietjet.jpg" style="width:100%">
+            <div class="text" style="color: black;">Vietjet Air</div>
+        </div>
+    
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 4</div>
+            <img src="picture/jetstar.jpg" style="width:100%">
+            <div class="text" style="color: black;">Jetstar Pacific</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 4</div>
+            <img src="picture/bamboo.jpg" style="width:100%">
+            <div class="text">Bamboo Airways</div>
+        </div>
+    
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+
+    <main>
+        <section class="section">
+            <h2>Vé Máy Bay Hồ Chí Minh Đến Phú Quốc</h2>
+            <p>Chúng tôi rất vui mừng thông báo về chương trình khuyến mãi đặc biệt chưa từng có: giảm giá 5% cho tất cả các chuyến bay từ Hồ Chí Minh đến Phú Quốc! Đây là cơ hội tuyệt vời để bạn và gia đình có thể thỏa sức khám phá những địa điểm mới mà không cần lo lắng về chi phí.</p>
+        </section>
+        <section style="text-align: left;">
+            <h2>Bay Đến Mọi Nơi Với Giá Cực Tốt</h2>
+            <p>Với chương trình khuyến mãi này, bạn có thể dễ dàng bay đến mọi địa điểm mà bạn mong muốn. Từ những bãi biển đẹp mê hồn của Nha Trang, Đà Nẵng, Phú Quốc đến các điểm du lịch nổi tiếng như Sapa, Đà Lạt. Không chỉ trong nước, chúng tôi còn cung cấp nhiều chuyến bay quốc tế với giá cực kỳ ưu đãi. Hãy nhanh tay đặt vé để không bỏ lỡ cơ hội này!  Với các ưu đãi này khi bạn đến tại quầy soát vé sẽ được hoàn về tài khoản của bạn cho các chuyến bay sau.</p>
+            <h3>Các Điểm Đến Nổi Bật</h3>
+            <ul>
+                <li>Công viên chủ đề vinwonder <br>
+                    <img src="https://res.klook.com/image/upload/fl_lossy.progressive,q_85/c_fill,w_1000/v1687286409/wfoe6rdjieytk2d1zo4s.webp" alt="">
+                </li>
+                <li> Sun World Phú Quốc <br>
+                    <img src="https://image.kkday.com/v2/image/get/h_650%2Cc_fit/s1.kkday.com/product_100556/20200602054526_NRU9D/jpg" alt="">
+                </li>
+                <li>Suối Tranh
+                    <br>
+                    <img src="https://owa.bestprice.vn/images/articles/uploads/15-dia-diem-du-lich-o-phu-quoc-hap-dan-nhat-ban-khong-nen-bo-lo-5ea2c19ff0f26.jpg" alt="">
+                </li>
+                
+            </ul>
+        </section>
+        <section style="text-align: left;">
+            <h2>Đội Ngũ Chăm Sóc Khách Hàng Tận Tình</h2>
+            <p>Chúng tôi luôn đặt sự hài lòng của khách hàng lên hàng đầu. Đội ngũ chăm sóc khách hàng của chúng tôi luôn sẵn sàng hỗ trợ bạn trong suốt quá trình đặt vé và hành trình bay. Nếu có bất kỳ thắc mắc hay cần hỗ trợ, đừng ngần ngại liên hệ với chúng tôi qua hotline hoặc email. Chúng tôi cam kết sẽ phản hồi nhanh chóng và mang đến cho bạn dịch vụ tốt nhất.</p>
+        </section>
+        <section style="text-align: left;">
+            <h2>Tiện Lợi Và Nhanh Chóng</h2>
+            <p>Việc đặt vé chưa bao giờ dễ dàng đến thế với dịch vụ đặt vé trực tuyến của chúng tôi. Chỉ với vài cú click chuột, bạn đã có thể sở hữu ngay tấm vé cho chuyến bay mơ ước. Hệ thống của chúng tôi luôn cập nhật liên tục các thông tin về chuyến bay, giúp bạn có thể lựa chọn những chuyến bay phù hợp nhất với lịch trình của mình. Đặc biệt, với chương trình giảm giá 5%, việc đi lại chưa bao giờ tiết kiệm đến thế.</p>
+        </section>
+        <section style="text-align: left;">
+            <h2>Điều Kiện Và Điều Khoản</h2>
+            <p>Chương trình khuyến mãi giảm giá 5% áp dụng cho tất cả các chuyến bay đặt vé trong khoảng thời gian từ ngày 5/7 đến ngày 20/7. Vé khuyến mãi có thể không hoàn trả hoặc thay đổi. Vui lòng kiểm tra kỹ các điều kiện và điều khoản khi đặt vé để đảm bảo quyền lợi của bạn. Chúng tôi mong muốn mang đến cho bạn trải nghiệm bay tuyệt vời nhất với mức giá hợp lý nhất.</p>
+        </section>
+        <section style="text-align: left;">
+            <h2>Lời Kết</h2>
+            <p>Hãy nhanh tay nắm bắt cơ hội này để cùng gia đình và bạn bè trải nghiệm những chuyến đi đầy thú vị. Chương trình khuyến mãi giảm giá 5% chỉ có trong thời gian giới hạn, vì vậy đừng bỏ lỡ! Chúng tôi hy vọng sẽ được phục vụ bạn trên những chuyến bay sắp tới và mang lại cho bạn những kỷ niệm khó quên.</p>
+            <p>Xin chân thành cảm ơn sự tin tưởng và ủng hộ của quý khách hàng. Chúc quý khách có những chuyến bay an toàn, thuận lợi và tràn đầy niềm vui. Hãy để chúng tôi là người bạn đồng hành đáng tin cậy của bạn trên mọi hành trình!</p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="column">
+            <h3 style="font-size: 25px; text-align: left;">UpWings</h3>
+            <p style="font-size: 16px; text-align: left;">Địa chỉ: Số 1 Phố Xốm - Phú Lãm - Hà Đông - Hà Nội<br>
+                Email: Upwing@gmail.com<br>
+                Điện thoại: 0336601730
+            </p>
+        </div>
+        <div class="column">
+          <p><img src="./picture/logo.png" width="150px" alt="Logo Footer"></p>
+        </div>
+    </footer>
+
+    <script src="js/index.js"></script>
+    <script src="js/user.js"></script>
+</body>
+</html>
