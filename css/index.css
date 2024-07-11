@@ -276,18 +276,6 @@ footer {
     animation: gradient 115s ease infinite;
     height: 25vh;
 }
-@keyframes gradient {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  }
-  
 .column {
     flex: 1;
     margin: 0 10px;
@@ -295,4 +283,29 @@ footer {
 
 .column img {
     margin-left: 500px;
+}
+@media only screen and (max-width: 768px) {
+    .navbar-menu {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: #4491e9;
+        padding: 10px;
+        border-radius: 4px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        flex-direction: column;
+    }
+    .navbar-menu.active {
+        display: flex;
+    }
+    .navbar-toggle {
+        display: flex;
+    }
+    .offers, .popular-routes {
+        flex-direction: column;
+    }
+    .card {
+        width: 100%;
+    }
 }

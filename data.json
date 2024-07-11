@@ -11,42 +11,6 @@
       "price": "2300434",
       "airline": "Vietnam Airlines",
       "id": "df46"
-    },
-    {
-      "id": "8ac7",
-      "from": "Hà Nội (HAN)",
-      "to": "Đà Nẵng (DAD)",
-      "departureDate": "2024-07-08",
-      "departureTime": "03:33",
-      "ticketClass": "Phổ thông",
-      "tripType": "Khứ hồi",
-      "returnDate": "2024-07-11",
-      "price": "999000",
-      "airline": "Vietnam Airlines"
-    },
-    {
-      "id": "50ac",
-      "from": "Tp. Hồ Chí Minh (SGN)",
-      "to": "Phú Quốc (PQC)",
-      "departureDate": "2024-07-10",
-      "departureTime": "06:00",
-      "ticketClass": "Thương gia",
-      "tripType": "Một chiều",
-      "returnDate": null,
-      "price": "899000",
-      "airline": "Vietnam Airlines"
-    },
-    {
-      "id": "272e",
-      "from": "Hà Nội (HAN)",
-      "to": "Nha Trang (CXR)",
-      "departureDate": "2024-07-13",
-      "departureTime": "10:00",
-      "ticketClass": "Phổ thông",
-      "tripType": "Một chiều",
-      "returnDate": null,
-      "price": "799000",
-      "airline": "Vietnam Airlines"
     }
   ],
   "users": [

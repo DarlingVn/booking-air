@@ -91,3 +91,28 @@ p{
     font-weight: bold;
     text-transform: uppercase;
 }
+@media only screen and (max-width: 768px) {
+    .navbar-menu {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: #4491e9;
+        padding: 10px;
+        border-radius: 4px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        flex-direction: column;
+    }
+    .navbar-menu.active {
+        display: flex;
+    }
+    .navbar-toggle {
+        display: flex;
+    }
+    .offers, .popular-routes {
+        flex-direction: column;
+    }
+    .card {
+        width: 100%;
+    }
+}
